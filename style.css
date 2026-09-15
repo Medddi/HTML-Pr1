@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Times New Roman', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #ddd5dbfa;
+}
+header {
+    background-color: #94bbe2;
+    color: #07051b;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+header h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+
+}
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.nav_link {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav_link:hover {
+    background-color: #34495e;
+    color: #3498db;
+}
+
+main {
+    max-width: 1500px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.pro_mene_img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: radius 0;;
+    margin-bottom: 1rem;
+}
+.pro_mene_block p {
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+.prakticni, .labs {
+    list-style: none;
+    padding-left: 0;
+}
+.prakticni a:hover, .labs a:hover {
+    color: #065ab9;
+    text-decoration: underline;
+}
+footer {
+    background-color: #94bbe2;
+    color: #062d47;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+}
+p {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
