@@ -1,0 +1,314 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+}
+.shapka {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 16px;
+    z-index: 100;
+}
+.shapka-livo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.fa-bars {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.znak-youtube {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+.znak-youtube i{
+    color: #ff0000;
+    font-size: 28px;
+}
+.znak-youtube-text {
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.shapka-center {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1; 
+    max-width: 600px; 
+    margin: 0 24px; 
+    justify-content: center;
+}
+.poshyk-blok {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #121212;
+    border: 1px solid #303030;
+    border-radius: 40px;
+    padding-left: 16px;
+    overflow: hidden;
+}
+.poshyk {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+}
+.poshyk-knopka{
+    background-color: #222;
+    border: none;
+    border-radius: 0 40px 40px 0;
+    width: 64px;
+    height: 40px;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.microfon-knopka {
+    background-color: #222;
+    border: 1px solid #303030;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 16px;
+}
+.shapka-pravo {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Збільшуємо відстань між елементами праворуч */
+}
+.stvoryty {
+    background-color: #222;
+    border: none;
+    border-radius: 20px;
+    padding: 0 16px;
+    height: 36px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stvoryty-text {
+  color: #f1f1f1;
+}
+.dzyvonochnok {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: #f1f1f1;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.poshyk-knopka:hover,
+.microfon-knopka:hover,
+.stvoryty:hover,
+.dzyvonochnok:hover {
+    background-color: #272727;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.osnova{
+    margin-top: 56px; 
+    margin-left: 240px;
+    padding: 24px;
+}
+.bocova-panel {
+    width: 240px;
+    height: calc(100vh - 56px);
+    position: fixed;
+    top: 56px;
+    left: 0;
+    background-color: #0f0f0f;
+    padding: 12px;
+}
+.boc-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #f1f1f1;
+    padding: 6px 12px;
+    margin-top: 4px;
+}
+.boc-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 14px;
+}
+.boc-spysok-active {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #272727; 
+    font-weight: 500;
+}
+.boc-item:hover {
+    background-color: #272727;
+}
+.bocova-panel hr {
+    border: none;
+    border-top: 1px solid #3f3f3f;
+    margin: 12px 0;
+}
+.strichka {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 4px 0 16px 0;
+    white-space: nowrap;
+    margin-bottom: 24px;
+    width: 100%;
+    
+
+}
+
+.strichka::-webkit-scrollbar {
+    display: none;
+}
+
+.strichka-knopka {
+    background-color: #272727; 
+    color: #f1f1f1;          
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex-shrink: 0;
+}
+
+.strichka-knopka:hover {
+    background-color: #3f3f3f;
+}
+
+.strichka-knopka.active {
+    background-color: #f1f1f1;
+    color: #0f0f0f;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 40px 16px;
+
+}
+.video {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.obkladinka {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #222;
+}
+.obkladinka img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-time {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 3px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.video-detali {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+.video-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #f1f1f1;
+    margin: 0 0 6px 0;
+    line-height: 1.4;
+}
+.channel-name, .video-status {
+    font-size: 14px;
+    color: #aaa;
+}
+.video-status {
+    display: flex;
+    gap: 6px;
+}
+.menu-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-btn:hover {
+    color: #fff;
+}
+.video-detali img{
+    width: 36px;   
+    height: 36px;
+    border-radius: 50%; 
+    object-fit: cover; 
+}

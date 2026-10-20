@@ -1,11 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Практична робота 3</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--https://fontawesome.com/search?ic=free-collection&f=classic&s=solid-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="https://i.pinimg.com/736x/05/b2/1f/05b21fbfef6546481ac8b1886c1a076f.jpg" alt="pr Image" class="pr_img">
+    <header class="shapka">
+        <div class="shapka-livo" >
+            <i class="fa-solid fa-bars"></i>
+            <div class="znak-youtube">
+                <i class="fa-brands fa-youtube"></i>
+                <span class="znak-youtube-text">YouTube</span>
+            </div>
+        </div>
+        <div class="shapka-center">
+             <div class="poshyk-blok">
+                <input type="text" class="poshyk" placeholder="Пошук">
+                <button class="poshyk-knopka"><i class="fa-solid fa-magnifying-glass"></i></button>
+             </div>
+                <button class="microfon-knopka"><i class="fa-solid fa-microphone"></i></button>
+        </div>
+        <div class="shapka-pravo">
+            <button class="stvoryty">
+                <i class="fa-solid fa-plus"></i>
+                <span class="stvoryty-text">Створити</span>
+            </button>
+            <button class="dzyvonochnok">
+            <i class="fa-solid fa-bell"></i>
+            </button>
+            <div class="avatar">
+                <img src="avatar.jpg" alt="Аватар">
+            </div>
+        </div>
+    </header>
+    <div class="osnova">
+        <aside class="bocova-panel">
+            <div class="boc-spysok">
+                <a href="#" class="boc-spysok-active">
+                    <i class="fa-solid fa-house"></i> Головна
+                </a>
+                <a href="#" class="boc-item">
+                    <i class="fa-solid fa-bolt"></i> YouTube Shorts
+                </a>
+                <a href="#" class="boc-item">
+                    <i class="fa-solid fa-clapperboard"></i> Підписки
+                </a>
+            </div>
+        <hr>
+            <div class="boc-spysok">
+                <h3 class="boc-title">Ви</h3>
+                <a href="#" class="boc-item">
+                   <i class="fa-regular fa-user"></i> Ваш канал
+                </a>
+                <a href="#" class="boc-item">
+                    <i class="fa-solid fa-clock-rotate-left"></i> Історія
+                </a>
+                <a href="#" class="boc-item">
+                    <i class="fa-solid fa-list"></i> Списки відтворення
+                </a>
+                <a href="#" class="boc-item">
+                   <i class="fa-regular fa-clock"></i> Переглянути пізніш...
+                </a>
+                <a href="#" class="boc-item">
+                     <i class="fa-regular fa-thumbs-up"></i> Відео, які сподоба...
+                </a>
+                <a href="#" class="boc-item">
+                    <i class="fa-solid fa-video"></i> Ваші відео
+                </a>
+                 <a href="#" class="boc-item">
+                     <i class="fa-solid fa-download"></i> Завантаження
+                </a>
+            </div>
+        </aside>
+        <div class="strichka">
+            <button class="strichka-knopka active">Усі</button>
+            <button class="strichka-knopka ">Ігри</button>
+            <button class="strichka-knopka">Музика</button>
+            <button class="strichka-knopka">Мікси</button>
+            <button class="strichka-knopka">Пряма трансляція</button>
+            <button class="strichka-knopka">Ситкоми</button>
+            <button class="strichka-knopka">Пригодницький бойовик</button>
+            <button class="strichka-knopka">Мультфільми</button>
+            <button class="strichka-knopka">Кулінарія</button>
+            <button class="strichka-knopka">Туризм</button>
+            <button class="strichka-knopka">Нещодавні завантаження</button>
+            <button class="strichka-knopka">Ви дивилися</button>
+            <button class="strichka-knopka">Новинки для вас</button>
+        </div>
+        <div class="video-grid">
+            <div class="video">
+                <div class="video-card">
+                    <div class="obkladinka">
+                        <img src="https://img.youtube.com/vi/p7JgOUHw6pE/hqdefault.jpg" alt="Обкладинка">
+                        <span class="video-time">1:30:22</span>
+                    </div>
+                </div>
+                <div class="video-detali">
+                    <img src="https://yt3.googleusercontent.com/zlJ95A9fqDkpBYjdRXBdwbaliDAz28tkkNzR8TWGIu1qhHUnufCwE5D50Rn0wARddxPx686F=s160-c-k-c0x00ffffff-no-rj" alt="Аватар каналу" class="channel-avatar">
+                    <div class="text-video">
+                        <h4 class="video-title">Антарктида. Великий випуск [Прем'єра 2025]</h4>
+                        <div class="kanal">
+                            <span class="channel-name">Антон Птушкін <i class="fa-solid fa-circle-check"></i></span>
+                        </div>
+                        <div class="video-status">
+                            <span>5,3 млн переглядів</span> • <span>10 місяців тому</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+
+            <div class="video">
+                <div class="video-card">
+                    <div class="obkladinka">
+                        <img src="https://img.youtube.com/vi/Gq-D1NTAuPY/hqdefault.jpg" alt="Обкладинка">
+                        <span class="video-time">40:12</span>
+                    </div>
+                </div>
+                <div class="video-detali">
+                    <img src="https://yt3.googleusercontent.com/DWVoN6K5fvjF-xqCOMswDSrvQ1YyLjOp0x2B-p8AX0blPLkmG-eW8vKU1pL_do2MWet-OH8M=s160-c-k-c0x00ffffff-no-rj" alt="Аватар каналу" class="channel-avatar">
+                    <div class="text-video">
+                        <h4 class="video-title">15-річний серійник проти монстра всередині себе</h4>
+                        <div class="kanal">
+                            <span class="channel-name">КОВАЛЬСЬКИЙ <i class="fa-solid fa-circle-check"></i></span>
+                        </div>
+                        <div class="video-status">
+                            <span>111 тис. переглядів</span> • <span>18 годин тому</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+
+            <div class="video">
+                <div class="video-card">
+                    <div class="obkladinka">
+                        <img src="https://img.youtube.com/vi/1jBxZ3-dkqo/hqdefault.jpg" alt="Обкладинка">
+                        <span class="video-time">40:05</span>
+                    </div>
+                </div>
+                <div class="video-detali">
+                    <img src="https://yt3.googleusercontent.com/h4TzKgc-BCM3uJopLz3M1p6kbIkB9Y-r5eJ89rpdMHWCOQuUaYsh-x15dHHkkgdCNJtiDjbHCQ=s160-c-k-c0x00ffffff-no-rj" alt="Аватар каналу" class="channel-avatar">
+                    <div class="text-video">
+                        <h4 class="video-title">Таємниця Титаніка: Чому спокійне море небезпечніше за шторм?</h4>
+                        <div class="kanal">
+                            <span class="channel-name">VCHORA</span>
+                        </div>
+                        <div class="video-status">
+                            <span>789 тис. переглядів</span> • <span>1 рік тому</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+
+            <div class="video">
+                <div class="video-card">
+                    <div class="obkladinka">
+                        <img src="https://img.youtube.com/vi/YBiGuSrDKqM/hqdefault.jpg" alt="Обкладинка">
+                        <span class="video-time">55:58</span>
+                    </div>
+                </div>
+                <div class="video-detali">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIdro_nArza2WPDj8ltkm5y1OZfEqwnGkXNGFrBz-tOuAyirH6A=s160-c-k-c0x00ffffff-no-rj" alt="Аватар каналу" class="channel-avatar">
+                    <div class="text-video">
+                        <h4 class="video-title">Смешарики 2D | Хозяйственность Совуньи. Лучшие серии</h4>
+                        <div class="kanal">
+                            <span class="channel-name">Рики <i class="fa-solid fa-circle-check"></i></span>
+                        </div>
+                        <div class="video-status">
+                            <span>210 тис. переглядів</span> • <span>3 тижні тому</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+
+            <div class="video">
+                <div class="video-card">
+                    <div class="obkladinka">
+                        <img src="https://img.youtube.com/vi/6xwHgh79d_s/hqdefault.jpg" alt="Обкладинка">
+                        <span class="video-time">1:06:46</span>
+                    </div>
+                </div>
+                <div class="video-detali">
+                    <img src="https://yt3.googleusercontent.com/JDPwhh73GWjQDySQyOGgbF6xof2nf_5zJ3_djjI-kqcuqUiznHCElC5uB5l8xzvJg_u_QIWi=s160-c-k-c0x00ffffff-no-rj" alt="Аватар каналу" class="channel-avatar">
+                    <div class="text-video">
+                        <h4 class="video-title">Oggy and the Cockroaches 1H - Joey the Genius (SEASON 6) BEST CARTOON COLLECTION</h4>
+                        <div class="kanal">
+                            <span class="channel-name">OGGY <i class="fa-solid fa-circle-check"></i></span>
+                        </div>
+                        <div class="video-status">
+                            <span>5,5 млн переглядів</span> • <span>2 роки тому</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+
+            <div class="video">
+                <div class="video-card">
+                    <div class="obkladinka">
+                        <img src="https://img.youtube.com/vi/L8OH3QpBvRc/hqdefault.jpg" alt="Обкладинка">
+                        <span class="video-time">25:52</span>
+                    </div>
+                </div>
+                <div class="video-detali">
+                    <img src="https://yt3.googleusercontent.com/NeW6uy-ykv3RUZRbV1ihSsJznnKUKKtbSCSnORLILF56-mozAieeEOBpVgZRb8C7n1wzhapChcU=s160-c-k-c0x00ffffff-no-rj" alt="Аватар каналу" class="channel-avatar">
+                    <div class="text-video">
+                        <h4 class="video-title">КАРПАТИ: Як влаштована дика природа Європи. Документальний фільм</h4>
+                        <div class="kanal">
+                            <span class="channel-name">Whisper & Dream</span>
+                        </div>
+                        <div class="video-status">
+                            <span>336 тис. переглядів</span> • <span>2 місяці тому</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
