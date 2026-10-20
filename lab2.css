@@ -1,0 +1,48 @@
+li:first-child{
+    font-weight: bold;
+}
+a:last-child{
+    color: #c91414;
+}
+input:disabled{
+    background-color: #6d6c6c;
+}
+div>p{
+    font-weight: semi-bold;
+}
+a[href="https://example.com"]{
+    color: #2ed149;
+}
+input[type="text"]{
+    border: 2px solid #000000;
+}
+li:first-child, li:last-child{
+   font-size:24px;
+}
+div p{
+    font-size: 16px;
+}
+input:checked{
+    background-color: #70cae0;
+}
+li>a{
+    text-decoration: underline;
+}
+li:nth-child(even){
+    font-weight: bold;
+}
+input[type="text"]:not(:disabled){
+    background-color: #5a5151;
+}
+p:first-child{
+    font-size: 24px;
+}
+.special + li {
+    text-decoration: line-through;
+}
+p::first-letter{
+    font-size: 36px;
+}
+a::after{
+    content: " ↗";
+}
