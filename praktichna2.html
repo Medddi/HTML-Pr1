@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Практична робота №2 — Реєстрація</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <img src="https://i.pinimg.com/736x/f7/62/00/f76200ffe52cc06ed947e48ba0fb6806.jpg" alt="pr Image" class="pr_img">
+    <header>
+        <h1>Практична робота №2</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Форма реєстрації користувача</h2>
+            <form action="https://webhook.site/8d466b09-75a8-4adf-a1ea-85fd58337c6e" method="POST" class="register-form">
+                <div class="form-group">
+                    <label for="first_name">Ім'я:*</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Прізвище:*</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Електронна пошта:*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль:*</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Підтвердження паролю:*</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Дата народження:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Стать:</label>
+                    <select id="gender" name="gender">
+                        <option value="">-- Оберіть стать --</option>
+                        <option value="female">Жіноча</option>
+                        <option value="male">Чоловіча</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Зареєструватися" class="submit-btn">
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+    </footer>
 </body>
 </html>
