@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ua">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Клавіатура</title>
     <link rel="stylesheet" href="klava.css">
 </head>
+
 <body>
     <div class="keyboard">
         <div class="livo">
-            <div class="row-first">
+            <div class="row-first-grid">
                 <div class="key esc">Esc</div>
                 <div class="key">F1</div>
                 <div class="key">F2</div>
@@ -25,7 +27,7 @@
                 <div class="key">F12</div>
                 <div class="key sleep-button">Sleep</div>
             </div>
-            <div class="row">
+            <div class="key-grid">
                 <div class="key">~</div>
                 <div class="key">1</div>
                 <div class="key">2</div>
@@ -38,10 +40,8 @@
                 <div class="key">9</div>
                 <div class="key">0</div>
                 <div class="key">-</div>
-                <div class="key">=</div>   
-                <div class="key backspace">Backspace</div> 
-            </div>
-            <div class="row">
+                <div class="key">=</div>
+                <div class="key backspace">Backspace</div>
                 <div class="key tab">Tab</div>
                 <div class="key">Q</div>
                 <div class="key">W</div>
@@ -55,9 +55,7 @@
                 <div class="key">P</div>
                 <div class="key">[</div>
                 <div class="key">]</div>
-                <div class="key enter-width">Enter</div>
-            </div>
-            <div class="row">
+                <div class="key">\</div>
                 <div class="key caps">Caps Lock</div>
                 <div class="key">A</div>
                 <div class="key">S</div>
@@ -70,10 +68,8 @@
                 <div class="key">L</div>
                 <div class="key">;</div>
                 <div class="key">'</div>
-                <div class="key">\</div>
-            </div>
-            <div class="row">
-                <div class="key shift">Shift</div>
+                <div class="key enter-width">Enter</div>
+                <div class="key shift-left">Shift</div>
                 <div class="key">Z</div>
                 <div class="key">X</div>
                 <div class="key">C</div>
@@ -84,9 +80,7 @@
                 <div class="key">,</div>
                 <div class="key">.</div>
                 <div class="key">/</div>
-                <div class="key shift">Shift</div>
-            </div>
-            <div class="row">
+                <div class="key shift-right">Shift</div>
                 <div class="key ctrl">Ctrl</div>
                 <div class="key win">Win</div>
                 <div class="key alt">Alt</div>
@@ -97,54 +91,42 @@
                 <div class="key ctrl">Ctrl</div>
             </div>
         </div>
-        <div class="center">
-            <div class="row">
-                <div class="key">PrtScn</div>
-                <div class="key">ScrLk</div>
-                <div class="key">Pause</div>
-            </div>
-            <div class="row">
-                <div class="key">Ins</div>
-                <div class="key">Home</div>
-                <div class="key">PgUp</div>
-            </div>
-            <div class="row">
-                <div class="key">Del</div>
-                <div class="key">End</div>
-                <div class="key">PgDn</div>
-            </div>
-            <div class="arrows-container">
-                <div class="key arrow-up">↑</div>
-                <div class="arrow-bottom-row">
-                    <div class="key">←</div>
-                    <div class="key">↓</div>
-                    <div class="key">→</div>
-                </div>
-            </div>
+        <div class="center-grid">
+            <div class="key">PrtScn</div>
+            <div class="key">ScrLk</div>
+            <div class="key">Pause</div>
+            <div class="key">Ins</div>
+            <div class="key">Home</div>
+            <div class="key">PgUp</div>
+            <div class="key">Del</div>
+            <div class="key">End</div>
+            <div class="key">PgDn</div>
+            <div class="key up">↑</div>
+            <div class="key left">←</div>
+            <div class="key down">↓</div>
+            <div class="key right">→</div>
+
         </div>
         <div class="numpad-grid">
             <div class="key">Num</div>
             <div class="key">/</div>
             <div class="key">*</div>
             <div class="key">-</div>
-
             <div class="key">7</div>
             <div class="key">8</div>
             <div class="key">9</div>
             <div class="key plus-tall">+</div>
-
             <div class="key">4</div>
             <div class="key">5</div>
             <div class="key">6</div>
-
             <div class="key">1</div>
             <div class="key">2</div>
             <div class="key">3</div>
             <div class="key enter-tall">Enter</div>
-
             <div class="key zero">0</div>
             <div class="key">.</div>
         </div>
     </div>
 </body>
+
 </html>

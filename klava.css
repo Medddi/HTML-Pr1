@@ -1,30 +1,27 @@
-
 body {
-    background-color: #5a5a6b;
-    display: flex;
+    background-color: #1e1e2f;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
 .keyboard {
-    background-color: #bcbcdf;
+    background-color: rgb(139, 139, 155);
     padding: 20px;
     border-radius: 12px;
-    display: flex;
-    gap: 20px; 
+    gap: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;          
+    flex-direction: row;     
+    align-items: flex-end;
+    margin: 20px auto;
 }
 
 .key {
     background-color: #3a3a52;
     color: #ffffff;
-    width: 40px;
-    height: 40px;
     border-radius: 6px;
-    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 12px;
@@ -33,6 +30,7 @@ body {
     box-shadow: 0 4px 0 #232332;
     transition: 0.1s;
     user-select: none;
+    display: flex;
 }
 
 .key:active {
@@ -40,57 +38,78 @@ body {
     box-shadow: 0 0 0 #232332;
 }
 
-.row-first {
-    display: flex;
-    gap: 9px;
-    margin-bottom: 9px;
-    justify-content: to flex-start;
+
+
+
+
+
+.row-first-grid {
+    display: grid;
+    grid-template-columns: repeat(15, 54px); 
+    gap: 6px; 
+    margin-bottom: 12px;
+    grid-template-rows: 40px;
 }
-.row {
-    display: flex;
+.row-first-grid .key.sleep-button{
+grid-column: 15; grid-row: 1;
+} 
+
+.key-grid {
+    display: grid;
+    grid-template-columns: repeat(30, 25px);
     gap: 6px;
-    margin-bottom: 6px;
+    
+}
+.key-grid .key {
+    height: 40px;
+    grid-column: span 2;
 }
 
-.space { width: 300px; }
-.backspace { width: 85px; }
-.tab { width: 65px; }
-.caps { width: 75px; }
-.enter { width: 85px; }
-.shift { width: 110px; }
-.ctrl { width: 50px; }
-.win { width: 50px; }
-.alt { width: 50px; }
-.enter-width { width: 60px; grid-row: span 2;  }
-.key-sleep { width: 60px; }
+.key-grid .key.backspace, .key-grid .key.tab, .key-grid .key.enter-width {
+    grid-column: span 3;
+}
+.key-grid .caps, .key-grid .key.shift-right{
+    grid-column: span 4;
+}
+
+.key-grid .key.shift-left{
+    grid-column: span 5;
+}
+.key-grid .key.space {
+    grid-column: span 15;
+}
+
+
+
+
+.center-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    grid-template-rows: repeat(6, 40px);
+    gap: 7px;
+}
+
+.center-grid .key.up{ grid-column: 2;grid-row: 5;}
+.center-grid .key.left { grid-column: 1; grid-row: 6; } 
+.center-grid .key.down { grid-column: 2; grid-row: 6; } 
+.center-grid .key.right { grid-column: 3; grid-row: 6; }
+
+
+
+
 
 .numpad-grid {
     display: grid;
     grid-template-columns: repeat(4, 50px); 
     grid-template-rows: repeat(5, 50px);    
-    gap: 6px;                               
+    gap: 6px;       
+    margin-left: 20px;                          
 }
 
 .zero {
     grid-column: span 2;
-    width: auto !important; 
 }
-.arrows-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    gap: 6px;
-}
-.arrow-bottom-row {
-    display: flex;
-    gap: 6px;
-}
-.plus-tall {
+
+.plus-tall, .enter-tall {
     grid-row: span 2;
-    height: auto !important;
-}
-.enter-tall {
-    grid-row: span 2;
-    height: auto !important;
 }
