@@ -1,0 +1,90 @@
+.postcard {
+    width: 100%;
+    max-width: $card-width;
+    min-height: $card-height;
+    background-color: $card-bg;
+    border-radius: $radius-card;
+    padding: 14px;
+    border: 6px solid $border-chocolate;
+    box-shadow: 0 50px 50px rgba(74, 75, 13, 0.6), 0 0 25px rgba($border-chocolate, 0.25);
+
+    &_frame {
+        width: 100%;
+        height: 100%;
+        min-height: $card-height;
+        border: 5px dashed $border-gold;
+        border-radius: $radius-card;
+        padding: 24px 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &_media {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_image {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        border-radius: 12px;
+        filter: drop-shadow(0 10px 18px rgba(51, 47, 47, 0.45));
+    }
+
+    
+    &_content {
+        flex: 1;
+        text-align: center;
+        color: $text-cream;
+    }
+
+    &_year {
+        display: inline-block;
+        font-size: 20px;
+        letter-spacing: 5px;
+        color: $border-chocolate;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &_title {
+        font-family: $font-main;
+        font-size: 48px;
+        line-height: 1.15;
+        margin-bottom: 20px;
+        color: #fff8e7;
+
+        &--glow {
+            text-shadow: 
+                0 0 8px rgba($border-gold, 0.8),
+                0 0 20px rgba($glow-gold, 0.6),
+                0 0 35px rgba($border-chocolate, 0.5);
+            animation: textGlow 2.2s infinite alternate ease-in-out;
+        }
+    }
+
+    &_text {
+        font-size: 16px;
+        line-height: 1.6;
+        color: rgba($text-cream, 0.85);
+    }
+}
+
+@keyframes textGlow {
+    from {
+        text-shadow: 
+            0 0 6px rgba($border-gold, 0.6),
+            0 0 15px rgba($glow-gold, 0.4);
+    }
+    to {
+        text-shadow: 
+            0 0 12px #ffffff,
+            0 0 25px $border-gold,
+            0 0 45px $border-chocolate;
+    }
+}
